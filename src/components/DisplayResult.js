@@ -25,6 +25,7 @@ export default function DisplayResult({data}) {
                             </tr>
                         </thead>
                         {
+                            // check if data is loaded or not, if loaded , check for sarch array then show data else show error message
                             (data!==undefined)?((data.Search!==undefined)?data.Search.map((result)=>{
                                 return(
                                     <tbody className="bg-white divide-y divide-gray-200" key={result.imdbID}>
