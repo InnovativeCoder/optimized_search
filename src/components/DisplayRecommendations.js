@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function DisplayResult({data}) {
+export default function DisplayRecommendations({data}) {
     return (
         <div className="mt-10">
             <div className="flex flex-col">
@@ -61,24 +61,24 @@ export default function DisplayResult({data}) {
                                     )
                                 }):
                                 <tbody className="bg-white divide-y divide-gray-200">
-                                        <tr>
-                                            <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className="flex items-center">  
-                                                    No results
-                                                </div>     
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td className="px-6 py-4 whitespace-nowrap">
+                                            <div className="flex items-center">  
+                                                No results
+                                            </div>     
+                                        </td>
+                                    </tr>
                                 </tbody>
                             ):
                             <tbody className="bg-white divide-y divide-gray-200">
-                                        <tr>
-                                            <td className="px-6 py-4 whitespace-nowrap">
-                                                <div className="flex items-center">  
-                                                    Loading ...
-                                                </div>     
-                                            </td>
-                                        </tr>
-                                </tbody>
+                                <tr>
+                                    <td className="px-6 py-4 whitespace-nowrap">
+                                        <div className="flex items-center">  
+                                            Loading ...
+                                        </div>     
+                                    </td>
+                                </tr>
+                            </tbody>
                         }
                         </table>
                     </div>

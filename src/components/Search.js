@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from 'react';
 import useSWR from 'swr';
-import DisplayResult from "./DisplayResult";
+import DisplayRecommendations from "./DisplayRecommendations";
 
 export default function Search() {
     const [search, setSearch] = useState('')
@@ -21,7 +21,7 @@ export default function Search() {
                 <button className="bg-gray-100 m-2 p-5 rounded-md text-sm shadow-xl border hover:bg-gray-300">Search</button>
             </form>
             {/* passing data as props to the component */}
-            <DisplayResult data={data}/> 
+            <DisplayRecommendations data={data}/> 
         </div>
     )
 }
