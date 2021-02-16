@@ -11,7 +11,8 @@
 <br>
 
 - Basic UI - tailwindcss
-- SWR
+- SWR (stale while revalidate for caching)
+- axios for networking aborting for in flight requests
 
 Demo :
 
